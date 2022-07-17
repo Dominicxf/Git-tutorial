@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>secondEx</title>
+</head>
+<body>
+    <p>hello World</p>
+    <button id ="btn" onclick="clickDone()">todo</button>
+    <div id ="counter">0</div>
+    <button onclick="countUp()">up</button>
+    <script>
+        /*
+        Exercise 1
+        Set up a <button id="todo-button">To Do</button> so that when you click the button, the text inside changes to "Done" (hint: use .innerText)
+        */
+       function clickDone(){
+        let element = document.getElementById('btn');
+        element.innerText ='Done!';
+       }
+      
+   /*
+     Exercise 2
+Set up a <div id="counter">0</div>, a button with the label "Up", and a variable: let count = 0; so that when clicking the button, 
+the number in the div increases by 1. (hint: use count = count + 1;)
+   */
+  const repeatString = function(string, num){
+      let sumString= string = ' ';
+      let sumNum = num =-1;
+      for(i =1; i <= sumNum; i++){
+          sumString += 'hey';
+          if(i > sumNum){
+              console.log('ERROR')
+          }
+      }
+
+      console.log(sumString);
+  }
+  repeatString();
+
+  const reverseString = function() {
+    const str ='hello';
+    let newString ='';
+    for(i = str.length-1; i >=0; i--){
+        newString += str[i];
+    }
+    console.log(newString);
+
+
+};
+reverseString();
+
+
+const citie = ['Manchester', 'Liverpool'];
+const removedCity = citie.pop();
+console.log(removedCity);   // "Liverpool";
+
+const cities = ['Manchester', 'Liverpool', 'Edinburgh', 'Carlisle'];
+const index = cities.indexOf('Liverpool');
+if (index !== -1) {
+  cities.splice(index, 1);
+}
+console.log(cities);     // [ "Manchester", "Edinburgh", "Carlisle" ]
+
+//An Arrays 
+function addNewArray(newArr){
+  //
+   newArr.push("Dominic");
+   return newArr;
+}
+//calling a function
+addNewArray(newArr["My", "is" ])//Output:
+
+/*
+  /**
+ * @param {array} apps
+ * @param {string} app
+ */
+function useApp(apps, app) {
+    apps.push(app);
+    return apps;
+
+}
+/*
+// Sample usage - do not modify
+console.log(useApp(["Clock", "Twitter"], "Firefox")); // ["Clock", "Twitter", "Firefox"]
+console.log(useApp([], "Safari")); // ["Safari"]
+
+*/
+
+    </script>
+</body>
+</html>
